@@ -14,8 +14,21 @@ A browser-based tool to fix stuck pixels on your screen by rapidly cycling color
 - **Speed (ms)** — set the interval between color cycles in milliseconds (default: 150ms). Lower = faster.
 - **Fullscreen** — toggle fullscreen mode for maximum coverage.
 - **Pause / Play** — pause the cycling at any time and resume when ready.
+- **Hide** — force-hide the UI until the next mouse movement.
 
-The control bar and cursor auto-hide after 5 seconds of inactivity and reappear on mouse movement or click.
+## Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `Space` | Pause / Play |
+| `F` | Toggle fullscreen |
+| `T` | Toggle pixel / single color mode |
+| `H` | Hide UI |
+| `R` / `G` / `B` | Solid red / green / blue |
+| `↑` / `↓` | Decrease / increase speed by 10ms |
+| `←` / `→` | Decrease / increase pixel size by 1 |
+
+The control bar, shortcuts panel, and ad slots auto-hide after 5 seconds of inactivity and reappear on mouse movement or click. Shortcuts panel and ads are hidden on mobile.
 
 ## Running
 

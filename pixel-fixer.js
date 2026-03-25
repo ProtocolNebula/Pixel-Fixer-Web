@@ -81,12 +81,15 @@ const PixelFixer = (() => {
 
   start();
 
-  function setPixelSize(s) { PIXEL_SIZE = Math.max(1, s | 0); }
+  function setPixelSize(s) { PIXEL_SIZE = Math.max(1, Math.min(50, s | 0)); }
 
   function setSpeed(ms) {
-    speed = Math.max(1, ms | 0);
+    speed = Math.max(1, Math.min(5000, ms | 0));
     if (!paused) { clearInterval(interval); interval = null; start(); }
   }
 
-  return { pause, resume, solidColor, isPaused, togglePixelMode, setPixelSize, setSpeed };
+  function getSpeed() { return speed; }
+  function getPixelSize() { return PIXEL_SIZE; }
+
+  return { pause, resume, solidColor, isPaused, togglePixelMode, setPixelSize, setSpeed, getSpeed, getPixelSize };
 })();
