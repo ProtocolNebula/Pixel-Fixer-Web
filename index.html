@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Fixer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="screen"></div>
+  <div id="overlay"></div>
+  <div id="controls">
+    <button id="btn-fullscreen">⛶ Fullscreen</button>
+    <button id="btn-pause">⏸ Pause</button>
+    <label style="color:#fff;font-size:14px;display:flex;align-items:center;gap:4px">Px <input id="pixel-size" type="number" min="1" max="50" value="1" style="width:50px;padding:4px;border-radius:4px;border:none;text-align:center"></label>
+    <label style="color:#fff;font-size:14px;display:flex;align-items:center;gap:4px">Ms <input id="speed" type="number" min="1" max="5000" value="150" style="width:60px;padding:4px;border-radius:4px;border:none;text-align:center"></label>
+    <button id="btn-mode">🔲 Single Color</button>
+    <button id="btn-red" class="color-btn" data-color="red">🔴</button>
+    <button id="btn-green" class="color-btn" data-color="green">🟢</button>
+    <button id="btn-blue" class="color-btn" data-color="blue">🔵</button>
+  </div>
+  <script src="pixel-fixer.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
